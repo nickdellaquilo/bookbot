@@ -9,3 +9,9 @@ def char_count(text):
         else:
             char_dict[c] = 1
     return char_dict
+
+def sort_on(dict):
+    return dict["num"]
+
+def sorted_char_count(unsorted_dict):
+    return dict(sorted(unsorted_dict.items(), key=lambda item: item[1], reverse=True))
